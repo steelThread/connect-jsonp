@@ -1,4 +1,4 @@
-# Connect CORS
+# Connect JSONP
 
 ## Installation
 
