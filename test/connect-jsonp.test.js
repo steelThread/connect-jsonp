@@ -1,9 +1,9 @@
-require.paths.unshift(__dirname + '/../lib');
-
 var connect = require('connect'),
     jsonp = require('connect-jsonp'),
     helpers = require('./helpers'),
     assert = require('assert');
+
+connect.jsonp = jsonp;
 
 function server(headers, code) {
     headers = headers || {};
@@ -11,7 +11,7 @@ function server(headers, code) {
     return helpers.run(
         connect.bodyDecoder(),
         connect.gzip(),
-        jsonp(),
+        connect.jsonp(),
         connect.createServer(
             function(req, res) {
                 res.writeHead(code, headers);
