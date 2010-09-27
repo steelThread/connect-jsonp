@@ -2,7 +2,7 @@
 
 ## Installation
 
-    $ npm install jsonp-cors
+    $ npm install connect-jsonp (well not yet)
 
 ## Examples
 
