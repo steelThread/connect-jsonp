@@ -23,13 +23,13 @@ function server(headers, code) {
 }
 
 function assertPadded(res, padded) {
-	if (padded) {
+    if (padded) {
         assert.eql("cb({data: 'data'})", res.body);
         assert.eql('application/javascript', res.headers['content-type']);
-	
-	} else {
-        assert.eql("{data: 'data'}", res.body);		
-	}
+    
+    } else {
+        assert.eql("{data: 'data'}", res.body);     
+    }
 }
 
 module.exports = {
@@ -49,7 +49,7 @@ module.exports = {
         req.buffer = true;
         req.addListener('response', function(res) {
             res.addListener('end', function() {
-	            assertPadded(res, true);
+                assertPadded(res, true);
             });
         });
         req.write('callback=cb');
@@ -61,7 +61,7 @@ module.exports = {
         req.buffer = true;
         req.addListener('response', function(res) {
             res.addListener('end', function(){
-	            assertPadded(res, true);
+                assertPadded(res, true);
             });
         });
         req.write('{"callback": "cb"}');
@@ -73,7 +73,7 @@ module.exports = {
         req.buffer = true;
         req.addListener('response', function(res) {
             res.addListener('end', function() {
-	            assertPadded(res, false);
+                assertPadded(res, false);
             });
         });
         req.write('{"callback": "cb"}');
@@ -82,16 +82,16 @@ module.exports = {
 
     'test plays nice with others': function() {
         var req = server().request('POST', '/', {
-	        'Content-Type': 'application/x-www-form-urlencoded',
-         	'Accept-Encoding': 'deflate, gzip'
-	    });
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'deflate, gzip'
+        });
         req.buffer = true;
         req.addListener('response', function(res) {
             res.addListener('end', function() {
-	            assert.eql('gzip', res.headers['content-encoding']);
-		        assert.eql('application/javascript', res.headers['content-type']);
-		        // test compression
-  		        //assert.eql("cb({data: 'data'})", res.body);
+                assert.eql('gzip', res.headers['content-encoding']);
+                assert.eql('application/javascript', res.headers['content-type']);
+                // test compression
+                //assert.eql("cb({data: 'data'})", res.body);
             });
         });
         req.write('callback=cb');
