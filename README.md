@@ -1,4 +1,4 @@
-# Connect JSONP
+# connect jsonp
 
 ## Installation
 
@@ -29,7 +29,7 @@
 
 ## TODO
 
- - Make jsonp independent of connect's bodyDecode middleware.
+ - Make jsonp independent of connect's bodyDecoder middleware.
 
 ## License 
 
