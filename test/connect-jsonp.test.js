@@ -44,6 +44,17 @@ module.exports = {
         req.end();
     },
 
+    'test query string': function() {
+        var req = server().request('GET', '/test?callback=cb', { });
+        req.buffer = true;
+        req.addListener('response', function(res) {
+            res.addListener('end', function() {
+                assertPadded(res, true);
+            });
+        });
+        req.end();	
+    },
+
     'test form request': function() {
         var req = server().request('POST', '/', {'Content-Type': 'application/x-www-form-urlencoded'});
         req.buffer = true;

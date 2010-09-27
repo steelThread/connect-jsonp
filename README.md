@@ -9,13 +9,14 @@
 
      var connect = require('connect'),
          jsonp = require('connect-jsonp');
-     
-     var server = Connect.createServer(
+     connect.jsonp = jsonp;
+
+     var server = connect.createServer(
 	    connect.bodyDecoder(),
-	    jsonp(),
+	    connect.jsonp(),
         function(req, res) {
-             res.writeHead(200, {'Content-Type': 'text/plain'});
-             res.end("{a: 'json string'");
+             res.writeHead(200, {'Content-Type': 'text/jso'});
+             res.end("{'a': 'json string'");
         }
      );
 
