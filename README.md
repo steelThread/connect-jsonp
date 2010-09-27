@@ -2,7 +2,7 @@
 
 ## Installation
 
-    $ npm install connect-jsonp (well not yet)
+    $ npm install connect-jsonp
 
 ## Examples
 
