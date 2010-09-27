@@ -1,8 +1,9 @@
+require.paths.unshift(__dirname + '/../lib');
+
 var connect = require('connect'),
     jsonp = require('connect-jsonp'),
     helpers = require('./helpers'),
-    assert = require('assert'),
-    http = require('http');
+    assert = require('assert');
 
 function server(headers, code) {
     headers = headers || {};
