@@ -1,3 +1,4 @@
+// if these libs are installed then simply require 'connect' & 'connect-jsonp'
 var connect = require('../support/connect/lib/connect'),
     jsonp = require('../lib/connect-jsonp');
 
