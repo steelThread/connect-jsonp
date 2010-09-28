@@ -49,12 +49,12 @@ module.exports = {
     },
 
     'test not a GET request': function() {
-		helpers.run(connect.jsonp()).assertResponse(
-		    'POST', 
-		    '/?callback=cb', 
-		    400, 
-		    'cb({"error":"method not allowed","description":"with callback only GET allowed"})'
-		);
+        helpers.run(connect.jsonp()).assertResponse(
+            'POST', 
+            '/?callback=cb', 
+            400, 
+            'cb({"error":"method not allowed","description":"with callback only GET allowed"})'
+        );
     },
 
     'test query string': function() {
