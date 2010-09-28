@@ -1,7 +1,7 @@
 {
   "name": "connect-jsonp",
   "description": "jsonp middleware for connect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./lib/connect-jsonp.js",
   "contributors": [ 
     { "name": "Sean McDaniel", "email": "sean.mcdaniel@me.com" }
