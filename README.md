@@ -13,9 +13,9 @@ See included <a href='http://github.com/steelThread/connect-jsonp/blob/master/ex
     git submodule update --init
     make test
 
-## TODO
+## TODOs
 
- - Make jsonp independent of connect's bodyDecoder middleware.
+See issues that begin with 'TODO:'
 
 ## License 
 
