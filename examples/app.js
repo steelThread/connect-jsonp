@@ -19,13 +19,13 @@ var server = connect.createServer(
 console.log('connect-jsonp example server listening on port 3000');
 
 function app(app) {
-    // simple alert, not exactly x-domain
+    // simple alert, not exactly x-domain...
     app.get('/', function(req, res) {
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.end('<script type="text/javascript" src="/script-tag?callback=alert"></script>');
     });
 
-    // called by browser after the script tag is rendered
+    // called by la browser after the script tag is rendered
     app.get('/script-tag', function(req, res) {
         res.writeHead(200, {'Content-Type': 'application/javascript'});
         res.end(response);      
