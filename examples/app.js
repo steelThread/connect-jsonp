@@ -25,7 +25,7 @@ function app(app) {
         res.end('<script type="text/javascript" src="/script-tag?callback=alert"></script>');
     });
 
-    // called by browser after the script tag is rendered, result is evaluated
+    // requested after the script tag is rendered, result is evaluated
     app.get('/script-tag', function(req, res) {
         res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(JSON.stringify(response));      
