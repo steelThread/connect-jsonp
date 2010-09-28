@@ -27,7 +27,7 @@ function app(app) {
 
     // called by la browser after the script tag is rendered
     app.get('/script-tag', function(req, res) {
-        res.writeHead(200, {'Content-Type': 'application/javascript'});
+        res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(response);      
     });
 }
