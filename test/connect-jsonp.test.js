@@ -5,6 +5,10 @@ var connect = require('connect'),
 
 connect.jsonp = jsonp;
 
+var expectRes = "{'data': 'data'}";
+var expectPaddedRes = "cb({'data': 'data'})";
+
+
 function server(headers, code) {
     headers = headers || {};
     code = code || 200;
@@ -15,7 +19,7 @@ function server(headers, code) {
         connect.createServer(
             function(req, res) {
                 res.writeHead(code, headers);
-                res.write("{data: 'data'}")
+                res.write(expectRes)
                 res.end();
             }
         )
@@ -24,11 +28,12 @@ function server(headers, code) {
 
 function assertPadded(res, padded) {
     if (padded) {
-        assert.eql("cb({data: 'data'})", res.body);
+        assert.eql(expectPaddedRes, res.body);
         assert.eql('application/javascript', res.headers['content-type']);
+        assert.eql(expectPaddedRes.length, res.headers['content-length']);
     
     } else {
-        assert.eql("{data: 'data'}", res.body);     
+        assert.eql(expectRes, res.body);     
     }
 }
 
@@ -55,45 +60,9 @@ module.exports = {
         req.end();  
     },
 
-    'test form request': function() {
-        var req = server().request('POST', '/', {'Content-Type': 'application/x-www-form-urlencoded'});
-        req.buffer = true;
-        req.addListener('response', function(res) {
-            res.addListener('end', function() {
-                assertPadded(res, true);
-            });
-        });
-        req.write('callback=cb');
-        req.end();
-    },
 
-    'test json request': function() { 
-        var req = server().request('POST', '/', {'Content-Type': 'application/json; charset=utf8'});
-        req.buffer = true;
-        req.addListener('response', function(res) {
-            res.addListener('end', function(){
-                assertPadded(res, true);
-            });
-        });
-        req.write('{"callback": "cb"}');
-        req.end();
-    },
-
-    'test error status code': function() { 
-        var req = server({}, 404).request('POST', '/', {'Content-Type': 'application/json; charset=utf8'});
-        req.buffer = true;
-        req.addListener('response', function(res) {
-            res.addListener('end', function() {
-                assertPadded(res, false);
-            });
-        });
-        req.write('{"callback": "cb"}');
-        req.end();
-    },
-
-    'test plays nice with others': function() {
-        var req = server().request('POST', '/', {
-            'Content-Type': 'application/x-www-form-urlencoded',
+   'test plays nice with others': function() {
+        var req = server().request('GET', '/test?callback=cb', {
             'Accept-Encoding': 'deflate, gzip'
         });
         req.buffer = true;

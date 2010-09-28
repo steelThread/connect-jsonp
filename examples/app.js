@@ -2,10 +2,10 @@
 var connect = require('../support/connect/lib/connect'),
     jsonp = require('../lib/connect-jsonp');
 
-var response = JSON.stringify({
+var response = {
     success: true,
     it: 'works!'    
-});
+};
 
 var server = connect.createServer(
     connect.logger({ format: ':method :url' }),
@@ -28,6 +28,6 @@ function app(app) {
     // called by browser after the script tag is rendered, result is evaluated
     app.get('/script-tag', function(req, res) {
         res.writeHead(200, {'Content-Type': 'application/json'});
-        res.end(response);      
+        res.end(JSON.stringify(response));      
     });
 }
