@@ -6,22 +6,7 @@
 
 ## Examples
 
-
-     var connect = require('connect'),
-         jsonp = require('connect-jsonp');
-     connect.jsonp = jsonp;
-
-     var server = connect.createServer(
-	    connect.bodyDecoder(),
-	    connect.jsonp(),
-        function(req, res) {
-             res.writeHead(200, {'Content-Type': 'text/jso'});
-             res.end("{'a': 'json string'");
-        }
-     );
-
-     server.listen(3000);
-
+    See included <a href="http://github.com/steelThread/connect-jsonp/blob/master/examples/app.js">example</a>.
 
 ## Testing
 
