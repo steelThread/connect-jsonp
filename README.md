@@ -6,7 +6,7 @@
 
 ## Examples
 
-    See included <a href="http://github.com/steelThread/connect-jsonp/blob/master/examples/app.js">example</a>.
+    See included <a href='http://github.com/steelThread/connect-jsonp/blob/master/examples/app.js'>example</a>.
 
 ## Testing
 
