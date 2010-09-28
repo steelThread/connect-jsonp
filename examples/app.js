@@ -1,4 +1,4 @@
-var connect = require('connect'),
+var connect = require('../support/connect/lib/connect'),
     jsonp = require('../lib/connect-jsonp');
 
 var response = JSON.stringify({
