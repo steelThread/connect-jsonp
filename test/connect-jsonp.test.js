@@ -13,7 +13,6 @@ function server(headers, code) {
     headers = headers || {};
     code = code || 200;
     return helpers.run(
-        connect.bodyDecoder(),
         connect.gzip(),
         connect.jsonp(),
         connect.createServer(
@@ -47,6 +46,15 @@ module.exports = {
             });
         });
         req.end();
+    },
+
+    'test not a GET request': function() {
+		helpers.run(connect.jsonp()).assertResponse(
+		    'POST', 
+		    '/?callback=cb', 
+		    400, 
+		    'cb({"error":"method not allowed","description":"with callback only GET allowed"})'
+		);
     },
 
     'test query string': function() {
