@@ -15,7 +15,7 @@ See included <a href='http://github.com/steelThread/connect-jsonp/blob/master/ex
 
 ## TODOs
 
-See issues that begin with 'TODO:'
+See <a href="http://github.com/steelThread/connect-jsonp/issues">issues</a> that begin with 'TODO:'
 
 ## License 
 
