@@ -49,11 +49,17 @@ module.exports = {
     },
 
     'test not a GET request': function() {
+	    var expect = 'cb({"error":"method not allowed","description":"with callback only GET allowed"})';
         helpers.run(connect.jsonp()).assertResponse(
             'POST', 
             '/?callback=cb', 
             400, 
-            'cb({"error":"method not allowed","description":"with callback only GET allowed"})'
+            expect,
+            '',
+            function(res) {
+		        assert.eql('application/javascript', res.headers['content-type']);
+		        assert.eql(expect.length, res.headers['content-length']);
+            }
         );
     },
 
