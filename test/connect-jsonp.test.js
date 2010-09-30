@@ -1,7 +1,8 @@
 var connect = require('connect'),
     jsonp = require('connect-jsonp'),
     helpers = require('./helpers'),
-    assert = require('assert');
+    assert = require('assert'),
+	mime = require('connect/utils').mime;
 
 connect.jsonp = jsonp;
 
@@ -28,7 +29,7 @@ function server(headers, code) {
 function assertPadded(res, padded) {
     if (padded) {
         assert.eql(expectPaddedRes, res.body);
-        assert.eql('application/javascript', res.headers['content-type']);
+        assert.eql(mime.type('.js'), res.headers['content-type']);
         assert.eql(expectPaddedRes.length, res.headers['content-length']);
     
     } else {
@@ -57,7 +58,7 @@ module.exports = {
             expect,
             '',
             function(res) {
-                assert.eql('application/javascript', res.headers['content-type']);
+                assert.eql(mime.type('.js'), res.headers['content-type']);
                 assert.eql(expect.length, res.headers['content-length']);
             }
         );
@@ -82,8 +83,8 @@ module.exports = {
         req.buffer = true;
         req.addListener('response', function(res) {
             res.addListener('end', function() {
+                assert.eql(mime.type('.js'), res.headers['content-type']);
                 assert.eql('gzip', res.headers['content-encoding']);
-                assert.eql('application/javascript', res.headers['content-type']);
                 // test compression
                 //assert.eql("cb({data: 'data'})", res.body);
             });

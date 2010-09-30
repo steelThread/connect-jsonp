@@ -1,5 +1,5 @@
-// if these libs are installed then simply require 'connect' & 'connect-jsonp'
-var connect = require('../support/connect/lib/connect'),
+// note: assumes connect is installed
+var connect = require('connect'),
     jsonp = require('../lib/connect-jsonp');
 
 var response = {
