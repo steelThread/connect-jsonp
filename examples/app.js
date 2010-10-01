@@ -1,6 +1,6 @@
-// note: assumes connect is installed
+// note: assumes the connect & connect-json node packages are installed 
 var connect = require('connect'),
-    jsonp = require('../lib/connect-jsonp');
+    jsonp = require('connect-jsonp');
 
 var response = {
     success: true,
