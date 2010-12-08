@@ -8,6 +8,15 @@
 
 See included <a href='http://github.com/steelThread/connect-jsonp/blob/master/examples/app.js'>example</a>.
 
+## Config
+
+In order to facilitate caching as well as avoid downstream middleware conflicts the filter config option
+exists.  This defaults to false but can be specified passing either a boolean or using {filter: true}
+to your requires statement.  In is important to note that you will want to filter the callback param
+if you are planning on using the connect cache middleware.  Furthermore you will also want to ensure that
+the cache module is after this module as the url, including the query string, is used as a key into the
+cache (thanks to jmarca for pointing this out).
+
 ## Testing
 
     git submodule update --init
