@@ -1,9 +1,12 @@
 {
-  "name": "connect-jsonp",
-  "description": "jsonp middleware for connect",
-  "version": "0.0.4",
-  "main": "./lib/connect-jsonp.js",
-  "contributors": [ 
-    { "name": "Sean McDaniel", "email": "sean.mcdaniel@me.com" }
-  ]
+  "name"         : "connect-jsonp",
+  "version"      : "0.0.4",
+  "description"  : "jsonp middleware for connect",
+  "keywords"     : ["jsonp", "connect", "middleware", "nodejs"],
+  "homepage"     : "https://github.com/steelThread/connect-jsonp",
+  "author"       : "Sean McDaniel <sean.mcdaniel@me.com>"
+  "main"         : "./lib/connect-jsonp.js",
+  "respository"  : {"type": "git", "url": "https://steelThread@github.com/steelThread/connect-jsonp.git" },
+  "dependencies" : {"connect" : ">= 1.0.0"}
+  "engines"      : {"node"    : ">= 0.4.0"}  
 }
