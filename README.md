@@ -4,10 +4,6 @@
 
     $ npm install connect-jsonp
 
-## Examples
-
-See included <a href='http://github.com/steelThread/connect-jsonp/blob/master/examples/app.js'>example</a>.
-
 ## Config
 
 In order to facilitate caching as well as avoid downstream middleware conflicts the filter config option
@@ -17,15 +13,6 @@ In is important to note that you will want to filter the callback param if you a
 connect cache middleware.  Furthermore you will also want to ensure that the cache module is after this module 
 as the url, including the query string, is used as a key into the cache (thanks to <a href="https://github.com/jmarca">jmarca</a> 
 for pointing this out).
-
-## Testing
-
-    git submodule update --init
-    make test
-
-## TODOs
-
-See <a href="http://github.com/steelThread/connect-jsonp/issues">issues</a> that begin with 'TODO:'
 
 ## License 
 

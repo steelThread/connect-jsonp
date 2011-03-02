@@ -5,7 +5,7 @@
   "keywords"     : ["jsonp", "connect", "middleware", "nodejs"],
   "homepage"     : "https://github.com/steelThread/connect-jsonp",
   "author"       : "Sean McDaniel <sean.mcdaniel@me.com>"
-  "main"         : "./lib/connect-jsonp.js",
+  "main"         : ".index.js",
   "respository"  : {"type": "git", "url": "https://steelThread@github.com/steelThread/connect-jsonp.git" },
   "dependencies" : {"connect" : ">= 1.0.0"}
   "engines"      : {"node"    : ">= 0.4.0"}  
