@@ -14,6 +14,16 @@ connect cache middleware.  Furthermore you will also want to ensure that the cac
 as the url, including the query string, is used as a key into the cache (thanks to <a href="https://github.com/jmarca">jmarca</a> 
 for pointing this out).
 
+## Testing
+
+    git submodule update --init
+    make test
+
+## TODOs
+
+Current this middleware proxies the res.writeHead method.  This is limiting and will will potentially raise exceptions 
+for apps that simply call end.  
+
 ## License 
 
 (The MIT License)
