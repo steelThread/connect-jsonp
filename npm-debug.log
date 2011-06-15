@@ -1,0 +1,404 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+info using npm@1.0.6
+info using node@v0.4.7
+verbose config file /Users/sean/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose publish [ '.' ]
+silly testEngine { name: 'connect-jsonp',
+silly testEngine   version: '0.0.4',
+silly testEngine   description: 'jsonp middleware for connect',
+silly testEngine   keywords: [ 'jsonp', 'connect', 'middleware', 'nodejs' ],
+silly testEngine   homepage: 'https://github.com/steelThread/connect-jsonp',
+silly testEngine   author: 
+silly testEngine    { name: 'Sean McDaniel',
+silly testEngine      email: 'sean.mcdaniel@me.com' },
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/steelThread/connect-jsonp.git' },
+silly testEngine   dependencies: { connect: '>= 1.0.0' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'connect-jsonp@0.0.4',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true }
+verbose caching package.json
+verbose loadDefaults connect-jsonp@0.0.4
+verbose pack /Users/sean/Development/js-workspace/connect-jsonp /tmp/npm-1308146264865/1308146264865-0.26644604397006333/tmp.tgz
+silly testEngine { name: 'connect-jsonp',
+silly testEngine   version: '0.0.4',
+silly testEngine   description: 'jsonp middleware for connect',
+silly testEngine   keywords: [ 'jsonp', 'connect', 'middleware', 'nodejs' ],
+silly testEngine   homepage: 'https://github.com/steelThread/connect-jsonp',
+silly testEngine   author: 
+silly testEngine    { name: 'Sean McDaniel',
+silly testEngine      email: 'sean.mcdaniel@me.com' },
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/steelThread/connect-jsonp.git' },
+silly testEngine   dependencies: { connect: '>= 1.0.0' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'connect-jsonp@0.0.4',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/sean/Development/js-workspace/connect-jsonp' }
+verbose caching /Users/sean/Development/js-workspace/connect-jsonp/package.json
+verbose loadDefaults connect-jsonp@0.0.4
+silly testEngine { name: 'expresso',
+silly testEngine   version: '0.7.3',
+silly testEngine   description: 'TDD framework, light-weight, fast, CI-friendly',
+silly testEngine   author: 
+silly testEngine    { name: 'TJ Holowaychuk',
+silly testEngine      email: 'tj@vision-media.ca' },
+silly testEngine   bin: 
+silly testEngine    { expresso: './bin/expresso',
+silly testEngine      'node-jscoverage': './deps/jscoverage/node-jscoverage' },
+silly testEngine   scripts: { preinstall: 'make deps/jscoverage/node-jscoverage' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'expresso@0.7.3',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/Users/sean/Development/js-workspace/connect-jsonp/support/expresso' }
+verbose caching /Users/sean/Development/js-workspace/connect-jsonp/support/expresso/package.json
+verbose loadDefaults expresso@0.7.3
+verbose mkdir done: /tmp/npm-1308146264865/1308146264865-0.26644604397006333 755
+verbose mkdir'ed /tmp/npm-1308146264865/1308146264865-0.26644604397006333
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'connect-jsonp/.gitignore',
+silly tar args   'connect-jsonp/.gitmodules',
+silly tar args   'connect-jsonp/History.md',
+silly tar args   'connect-jsonp/index.js',
+silly tar args   'connect-jsonp/Makefile',
+silly tar args   'connect-jsonp/package.json',
+silly tar args   'connect-jsonp/README.md',
+silly tar args   'connect-jsonp/examples/example.js',
+silly tar args   'connect-jsonp/lib/connect-jsonp.js',
+silly tar args   'connect-jsonp/test/test.js',
+silly tar args   'connect-jsonp/support/expresso/.gitignore',
+silly tar args   'connect-jsonp/support/expresso/.gitmodules',
+silly tar args   'connect-jsonp/support/expresso/History.md',
+silly tar args   'connect-jsonp/support/expresso/Makefile',
+silly tar args   'connect-jsonp/support/expresso/package.json',
+silly tar args   'connect-jsonp/support/expresso/Readme.md',
+silly tar args   'connect-jsonp/support/expresso/bin/expresso',
+silly tar args   'connect-jsonp/support/expresso/lib/bar.js',
+silly tar args   'connect-jsonp/support/expresso/lib/foo.js',
+silly tar args   'connect-jsonp/support/expresso/docs/api.html',
+silly tar args   'connect-jsonp/support/expresso/docs/index.html',
+silly tar args   'connect-jsonp/support/expresso/docs/index.md',
+silly tar args   'connect-jsonp/support/expresso/docs/layout/foot.html',
+silly tar args   'connect-jsonp/support/expresso/docs/layout/head.html',
+silly tar args   'connect-jsonp/support/expresso/test/assert.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/async.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/bar.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/foo.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/http.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/serial/async.test.js',
+silly tar args   'connect-jsonp/support/expresso/test/serial/http.test.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir done: /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm 755
+verbose unpack_ uid, gid [ 0, 20 ]
+verbose unpackTarget /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/tmp/npm-1308146264865/1308146264865-0.26644604397006333/tmp.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm"
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/.gitignore
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/.gitmodules
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/History.md
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/index.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/Makefile
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/package.json
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/README.md
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/examples/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/examples/example.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/lib/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/lib/connect-jsonp.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/test/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/test/test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/.gitignore
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/.gitmodules
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/History.md
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/Makefile
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/package.json
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/Readme.md
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/bin/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/bin/expresso
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/lib/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/lib/bar.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/lib/foo.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/api.html
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/index.html
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/index.md
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/layout/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/layout/foot.html
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/docs/layout/head.html
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/assert.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/async.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/bar.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/foo.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/http.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/serial/
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/serial/async.test.js
+silly asyncMap in gTP /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp/support/expresso/test/serial/http.test.js
+verbose gunzed /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp
+verbose rm'ed /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package
+verbose renamed [ '/tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/___package.npm/connect-jsonp',
+verbose renamed   '/tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package' ]
+silly testEngine { name: 'connect-jsonp',
+silly testEngine   version: '0.0.4',
+silly testEngine   description: 'jsonp middleware for connect',
+silly testEngine   keywords: [ 'jsonp', 'connect', 'middleware', 'nodejs' ],
+silly testEngine   homepage: 'https://github.com/steelThread/connect-jsonp',
+silly testEngine   author: 
+silly testEngine    { name: 'Sean McDaniel',
+silly testEngine      email: 'sean.mcdaniel@me.com' },
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/steelThread/connect-jsonp.git' },
+silly testEngine   dependencies: { connect: '>= 1.0.0' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'connect-jsonp@0.0.4',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package' }
+verbose caching /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package/package.json
+verbose loadDefaults connect-jsonp@0.0.4
+verbose tarball contents [ 'package' ]
+verbose from cache /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package/package.json
+verbose pack /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package /Users/sean/.npm/connect-jsonp/0.0.4/package.tgz
+verbose from cache /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package/package.json
+silly testEngine { name: 'expresso',
+silly testEngine   version: '0.7.3',
+silly testEngine   description: 'TDD framework, light-weight, fast, CI-friendly',
+silly testEngine   author: 
+silly testEngine    { name: 'TJ Holowaychuk',
+silly testEngine      email: 'tj@vision-media.ca' },
+silly testEngine   bin: 
+silly testEngine    { expresso: './bin/expresso',
+silly testEngine      'node-jscoverage': './deps/jscoverage/node-jscoverage' },
+silly testEngine   scripts: { preinstall: 'make deps/jscoverage/node-jscoverage' },
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'expresso@0.7.3',
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   path: '/tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package/support/expresso' }
+verbose caching /tmp/npm-1308146264865/1308146264865-0.26644604397006333/contents/package/support/expresso/package.json
+verbose loadDefaults expresso@0.7.3
+verbose mkdir done: /Users/sean/.npm/connect-jsonp/0.0.4 755
+verbose mkdir'ed /Users/sean/.npm/connect-jsonp/0.0.4
+verbose tar about to write tar and gzip it.
+silly tar args [ '-cvf',
+silly tar args   '-',
+silly tar args   'package/.gitignore',
+silly tar args   'package/.gitmodules',
+silly tar args   'package/History.md',
+silly tar args   'package/index.js',
+silly tar args   'package/Makefile',
+silly tar args   'package/package.json',
+silly tar args   'package/README.md',
+silly tar args   'package/examples/example.js',
+silly tar args   'package/lib/connect-jsonp.js',
+silly tar args   'package/test/test.js',
+silly tar args   'package/support/expresso/.gitignore',
+silly tar args   'package/support/expresso/.gitmodules',
+silly tar args   'package/support/expresso/History.md',
+silly tar args   'package/support/expresso/Makefile',
+silly tar args   'package/support/expresso/package.json',
+silly tar args   'package/support/expresso/Readme.md',
+silly tar args   'package/support/expresso/bin/expresso',
+silly tar args   'package/support/expresso/lib/bar.js',
+silly tar args   'package/support/expresso/lib/foo.js',
+silly tar args   'package/support/expresso/docs/api.html',
+silly tar args   'package/support/expresso/docs/index.html',
+silly tar args   'package/support/expresso/docs/index.md',
+silly tar args   'package/support/expresso/docs/layout/foot.html',
+silly tar args   'package/support/expresso/docs/layout/head.html',
+silly tar args   'package/support/expresso/test/assert.test.js',
+silly tar args   'package/support/expresso/test/async.test.js',
+silly tar args   'package/support/expresso/test/bar.test.js',
+silly tar args   'package/support/expresso/test/foo.test.js',
+silly tar args   'package/support/expresso/test/http.test.js',
+silly tar args   'package/support/expresso/test/serial/async.test.js',
+silly tar args   'package/support/expresso/test/serial/http.test.js' ]
+verbose success tar -cvf - <file list elided>
+verbose success gzip "--stdout"
+verbose mkdir done: /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm 755
+verbose unpack_ uid, gid [ 0, 20 ]
+verbose unpackTarget /Users/sean/.npm/connect-jsonp/0.0.4/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose success gzip "--decompress" "--stdout" "/Users/sean/.npm/connect-jsonp/0.0.4/package.tgz"
+verbose success tar "-mvxpf" "-" "--no-same-owner" "-C" "/Users/sean/.npm/connect-jsonp/0.0.4/___package.npm"
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/.gitignore
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/.gitmodules
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/History.md
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/index.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/Makefile
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/package.json
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/README.md
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/examples/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/examples/example.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/lib/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/lib/connect-jsonp.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/test/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/test/test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/.gitignore
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/.gitmodules
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/History.md
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/Makefile
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/package.json
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/Readme.md
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/bin/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/bin/expresso
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/lib/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/lib/bar.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/lib/foo.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/api.html
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/index.html
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/index.md
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/layout/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/layout/foot.html
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/docs/layout/head.html
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/assert.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/async.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/bar.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/foo.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/http.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/serial/
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/serial/async.test.js
+silly asyncMap in gTP /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package/support/expresso/test/serial/http.test.js
+verbose gunzed /Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package
+verbose rm'ed /Users/sean/.npm/connect-jsonp/0.0.4/package
+verbose renamed [ '/Users/sean/.npm/connect-jsonp/0.0.4/___package.npm/package',
+verbose renamed   '/Users/sean/.npm/connect-jsonp/0.0.4/package' ]
+silly testEngine { name: 'connect-jsonp',
+silly testEngine   version: '0.0.4',
+silly testEngine   description: 'jsonp middleware for connect',
+silly testEngine   keywords: [ 'jsonp', 'connect', 'middleware', 'nodejs' ],
+silly testEngine   homepage: 'https://github.com/steelThread/connect-jsonp',
+silly testEngine   author: 
+silly testEngine    { name: 'Sean McDaniel',
+silly testEngine      email: 'sean.mcdaniel@me.com' },
+silly testEngine   main: 'index',
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/steelThread/connect-jsonp.git' },
+silly testEngine   dependencies: { connect: '>= 1.0.0' },
+silly testEngine   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly testEngine   devDependencies: {},
+silly testEngine   _id: 'connect-jsonp@0.0.4',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.6',
+silly testEngine   _nodeVersion: 'v0.4.7',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   dist: 
+silly testEngine    { shasum: '9384f06e59b6dcf197b18b16ca2ae8240385a893',
+silly testEngine      tarball: 'http://registry.npmjs.org/connect-jsonp/-/connect-jsonp-0.0.4.tgz' },
+silly testEngine   scripts: {} }
+verbose caching /Users/sean/.npm/connect-jsonp/0.0.4/package/package.json
+verbose loadDefaults connect-jsonp@0.0.4
+silly updated sha bytes 25736
+info shasum 9384f06e59b6dcf197b18b16ca2ae8240385a893
+info shasum /Users/sean/.npm/connect-jsonp/0.0.4/package.tgz
+verbose from cache /Users/sean/.npm/connect-jsonp/0.0.4/package/package.json
+verbose chmod /Users/sean/.npm/connect-jsonp/0.0.4/package.json 644
+verbose chmod /Users/sean/.npm/connect-jsonp/0.0.4/package.tgz 644
+silly publish { name: 'connect-jsonp',
+silly publish   version: '0.0.4',
+silly publish   description: 'jsonp middleware for connect',
+silly publish   keywords: [ 'jsonp', 'connect', 'middleware', 'nodejs' ],
+silly publish   homepage: 'https://github.com/steelThread/connect-jsonp',
+silly publish   author: 
+silly publish    { name: 'Sean McDaniel',
+silly publish      email: 'sean.mcdaniel@me.com' },
+silly publish   main: 'index',
+silly publish   repository: 
+silly publish    { type: 'git',
+silly publish      url: 'git://github.com/steelThread/connect-jsonp.git' },
+silly publish   dependencies: { connect: '>= 1.0.0' },
+silly publish   engines: { node: '>= 0.4.1 < 0.5.0' },
+silly publish   devDependencies: {},
+silly publish   _id: 'connect-jsonp@0.0.4',
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.0.6',
+silly publish   _nodeVersion: 'v0.4.7',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: '9384f06e59b6dcf197b18b16ca2ae8240385a893',
+silly publish      tarball: 'http://registry.npmjs.org/connect-jsonp/-/connect-jsonp-0.0.4.tgz' },
+silly publish   scripts: {} }
+info prepublish connect-jsonp@0.0.4
+verbose PUT connect-jsonp
+verbose raw, before any munging connect-jsonp
+verbose url resolving [ 'http://registry.npmjs.org/', './connect-jsonp' ]
+verbose url resolved http://registry.npmjs.org/connect-jsonp
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/connect-jsonp',
+verbose url parsed   pathname: '/connect-jsonp' }
+WARN Sending authorization over insecure channel.
+silly writing json { _id: 'connect-jsonp',
+silly writing json   name: 'connect-jsonp',
+silly writing json   description: 'jsonp middleware for connect',
+silly writing json   'dist-tags': {},
+silly writing json   versions: {},
+silly writing json   maintainers: [ { name: 'steelThread', email: 'sean.mcdaniel@me.com' } ] }
+verbose response http://registry.npmjs.org/connect-jsonp
+silly chunk {"error":"conflict","reason":"Document update conflict."}
+silly chunk 
+verbose GET connect-jsonp
+verbose raw, before any munging connect-jsonp
+verbose url resolving [ 'http://registry.npmjs.org/', './connect-jsonp' ]
+verbose url resolved http://registry.npmjs.org/connect-jsonp
+verbose url parsed { protocol: 'http:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'http://registry.npmjs.org/connect-jsonp',
+verbose url parsed   pathname: '/connect-jsonp' }
+verbose response http://registry.npmjs.org/connect-jsonp
+silly chunk {"_id":"connect-jsonp","_rev":"14-c151930d001ade1cad703cb9e6b63969","name":"connect-jsonp","description":"jsonp middleware for connect","dist-tags":{"latest":"0.0.4"},"versions":{"0.0.2":{"name":"connect-jsonp","description":"jsonp middleware for connect","version":"0.0.2","main":"./lib/connect-jsonp","contributors":[{"name":"Sean McDaniel","email":"sean.mcdaniel@me.com"}],"_id":"connect-jsonp@0.0.2","engines":{"node":"*"},"_nodeSupported":true,"_npmVersion":"0.2.7-2","_nodeVersion":"v0.3.1-pre","dist":{"tarball":"http://registry.npmjs.org/connect-jsonp/-/connect-jsonp-0.0.2.tgz"},"directories":{}},"0.0.3":{"name":"connect-jsonp","description":"jsonp middleware for connect","version":"0.0.3","main":"./lib/connect-jsonp","contributors":[{"name":"Sean McDaniel","email":"sean.mcdaniel@me.com"}],"_id":"connect-jsonp@0.0.3","engines":{"node":"*"},"_nodeSupported":true,"dist":{"tarball":"http://registry.npmjs.org/connect-jsonp/-/connect-jsonp@0.0.3.tgz"},"directories":{}},"0.0.4":{"name":"connect-jsonp","version":"0.0.4","description":"jsonp middleware for connect","keywords":["jsonp","connect","middleware","nodejs"],"homepage":"https://github.com/steelThread/connect-jsonp","author":{"name":"Sean McDaniel","email":"sean.mcdaniel@me.com"},"main":"index","repository":{"type":"git","url":"git://github.com/steelThread/connect-jsonp.git"},"dependencies":{"connect":">= 1.0.0"},"engines":{"node":">= 0.4.1 < 0.5.0"},"_id":"connect-jsonp@0
+silly chunk .0.4","_engineSupported":true,"_npmVersion":"0.3.13","_nodeVersion":"v0.4.2","directories":{"lib":"./lib"},"files":[""],"_defaultsLoaded":true,"dist":{"shasum":"778bc86b5a7dbf7dd5e37317c1b24c445eb6c522","tarball":"http://registry.npmjs.org/connect-jsonp/-/connect-jsonp-0.0.4.tgz"}}},"maintainers":[{"name":"steelThread","email":"sean.mcdaniel@me.com"}],"time":{"0.0.2":"2011-03-04T01:06:10.651Z","0.0.3":"2011-03-04T01:06:10.651Z","0.0.4":"2011-03-04T01:06:16.149Z"},"author":{"name":"Sean McDaniel","email":"sean.mcdaniel@me.com"},"repository":{"type":"git","url":"git://github.com/steelThread/connect-jsonp.git"}}
+info Already published connect-jsonp@0.0.4
+verbose uploading bin dists []
+ERR! publish fail Cannot publish over existing version.
+ERR! publish fail Bump the 'version' field, set the --force flag, or
+ERR! publish fail     npm unpublish 'connect-jsonp@0.0.4'
+ERR! publish fail and try again
+ERR! 
+ERR! System Darwin 10.7.0
+ERR! command "node" "/usr/local/bin/npm" "publish"
+verbose exit [ 1, true ]
