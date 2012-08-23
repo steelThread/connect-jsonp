@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/steelThread/connect-jsonp.png)](http://travis-ci.org/steelThread/connect-jsonp)
 # connect jsonp
 
 ## Installation
